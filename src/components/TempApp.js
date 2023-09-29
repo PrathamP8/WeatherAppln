@@ -11,7 +11,7 @@ const TempApp = () => {
 
     useEffect( () => {
         const fetchApi = async () => {
-            const url = `http://api.openweathermap.org/data/2.5/weather?q=${search},&appid=${process.env.REACT_APP_API_KEY}&units=metric`;
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${search},&appid=${process.env.REACT_APP_API_KEY}&units=metric`;
             const response = await fetch(url);
             const resJson = await response.json();
             // setCityName(resJson.main);
